@@ -265,7 +265,7 @@ h2#text
 	transform: translateY(40px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .box {
     width: 45%;
     margin: 0 5%;

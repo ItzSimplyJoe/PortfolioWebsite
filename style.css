@@ -258,14 +258,6 @@ h2#text
 	background: rgba(255,255,255,0.05);
 	pointer-events: none;
 }
-.experiences{
-    font-size: 40px;
-    font-weight: 700;
-    color: #fff;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-}
 .content
 {
 	position: relative;
@@ -327,19 +319,28 @@ h2#text
 	color: #000;
 	background: #fff;
 }
-
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
+.experiences{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
+.experiences .box {
+  width: calc(50% - 20px); 
+  display: inline-block; 
+  margin: 10px; 
+  vertical-align: top; 
+  box-sizing: border-box; 
 }
 
+@media (max-width: 767px) {
+  .experiences .box {
+    width: calc(100% - 20px);
+  }
+}
 
 
 
@@ -617,8 +618,3 @@ h2#text
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .experience-box {
-    width: 90%;
-  }
-}

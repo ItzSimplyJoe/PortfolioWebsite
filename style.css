@@ -264,6 +264,13 @@ h2#text
 	padding: 20px;
 	transform: translateY(40px);
 }
+
+@media (max-width: 768px) {
+  .box {
+    width: 45%;
+    margin: 0 5%;
+  }
+}
 .box .content h2
 {
 	position: absolute;

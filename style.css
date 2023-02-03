@@ -119,6 +119,100 @@ h2#text
   font-size: 1.5em;
   z-index: 9;
 }
+/* ------------------------------------------------- Responsive ------------------------------------------------- */
+@media (max-width: 768px)
+{
+  header
+  {
+    padding: 30px 50px;
+  }
+  header ul
+  {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #2b1055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  header ul li
+  {
+    margin: 20px 0;
+  }
+  header ul li a
+  {
+    font-size: 1.5em;
+  }
+  header .menu-btn
+  {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  header .menu-btn span
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: 0.5s;
+  }
+  header .menu-btn span::before,
+  header .menu-btn span::after
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transition: 0.5s;
+  }
+  header .menu-btn span::before
+  {
+    transform: translateY(-10px);
+  }
+  header .menu-btn span::after
+  {
+    transform: translateY(10px);
+  }
+  header .menu-btn.active span
+  {
+    background: transparent;
+  }
+  header .menu-btn.active span::before
+  {
+    transform: rotate(45deg);
+  }
+  header .menu-btn.active span::after
+  {
+    transform: rotate(-45deg);
+  }
+  section
+  {
+    padding: 100px 50px;
+  }
+  h2#text
+  {
+    font-size: 10vw;
+    right: -200px;
+  }
+  #btn
+  {
+    transform: translateY(50px);
+  }
+}
 /* ------------------------------------------------- About me ------------------------------------------------- */
 .about
 {
@@ -139,6 +233,14 @@ h2#text
   font-size: 1.2em;
   color: #fff;
   text-align: center;
+}
+/* ------------------------------------------------- Responsive ------------------------------------------------- */
+@media (max-width: 768px)
+{
+  .about
+  {
+    padding: 100px 50px;
+  }
 }
 /* ------------------------------------------------- Portfolio ------------------------------------------------- */
 .portfolio p{
@@ -195,6 +297,177 @@ h2#text
 }
 .details a{
   color: #fff
+}
+/* ------------------------------------------------- Responsive ------------------------------------------------- */
+@media (max-width: 768px)
+{
+  header
+  {
+    padding: 30px 50px;
+  }
+  header ul
+  {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #2b1055;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  header ul li
+  {
+    margin: 20px 0;
+  }
+  header ul li a
+  {
+    color: #fff;
+  }
+  header ul li a.active,
+  header ul li a:hover
+  {
+    background: transparent;
+    color: #fff;
+  }
+  header .menu-btn
+  {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  header .menu-btn span
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+  }
+  header .menu-btn span:nth-child(2)
+  {
+    top: 9px;
+  }
+  header .menu-btn span:nth-child(3)
+  {
+    top: 18px;
+  }
+  header .menu-btn.active span:nth-child(1)
+  {
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  header .menu-btn.active span:nth-child(2)
+  {
+    opacity: 0;
+  }
+  header .menu-btn.active span:nth-child(3)
+  {
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  header .menu-btn.active ~ ul
+  {
+    left: 0;
+  }
+  section
+  {
+    height: auto;
+    padding: 100px 50px;
+  }
+  section h2
+  {
+    font-size: 5vw;
+  }
+  section h2#text
+  {
+    right: -200px;
+  }
+  section img#mountains_front
+  {
+    display: none;
+  }
+  section .btn
+  {
+    transform: translateY(0px);
+  }
+  .about
+  {
+    padding: 50px 50px;
+  }
+  .about h2
+  {
+    font-size: 2em;
+  }
+  .about p
+  {
+    font-size: 1em;
+  }
+  .portfolio p{
+    font-size: 30px;
+  }
+  .swiper-slide
+  {
+    width: 200px;
+    height: 300px;
+  }
+  .swiper-slide .imgBx
+  {
+    height: 200px;
+  }
+  .swiper-slide .details h3
+  {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .swiper-slide .details h3 span
+  {
+    font-size: 12px;
+  }
+  .swiper-slide .details p
+  {
+    font-size: 12px;
+  }
+  .swiper-slide .details a
+  {
+    font-size: 12px;
+  }
+  .swiper-slide .details a:hover
+  {
+    background: #fff;
+    color: #000;
+  }
+  .swiper-slide .details
+  {
+    padding: 10px;
+  }
+  .swiper-slide .details h3
+  {
+    text-align: center;
+  }
+  .swiper-slide .details p
+  {
+    text-align: center;
+  }
+  .swiper-slide .details a
+  {
+    text-align: center;
+  }
+  .swiper-slide .details a:hover
+  {
+    background: #fff;
+    color: #000;
+  }
+
 }
 
 /* ------------------------------------------------- Skills ------------------------------------------------- */
@@ -336,6 +609,28 @@ h2#text
 {
 	color: #000;
 	background: #fff;
+}
+/* ------------------------------------------------- Responsive ------------------------------------------------- */
+@media (max-width: 990px)
+{
+  .container
+  {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 767px)
+{
+  .container
+  {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+@media (max-width: 575px)
+{
+  .container
+  {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 /* ------------------------------------------------- Goals ------------------------------------------------- */
 .goals{

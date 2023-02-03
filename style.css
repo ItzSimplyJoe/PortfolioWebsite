@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-
+/* ------------------------------------------------- Header ------------------------------------------------- */
 *
 {
   margin: 0;
@@ -119,6 +119,7 @@ h2#text
   font-size: 1.5em;
   z-index: 9;
 }
+/* ------------------------------------------------- About me ------------------------------------------------- */
 .about
 {
   position: relative;
@@ -139,6 +140,7 @@ h2#text
   color: #fff;
   text-align: center;
 }
+/* ------------------------------------------------- Portfolio ------------------------------------------------- */
 .portfolio p{
     font-size: 40px;
     font-weight: 700;
@@ -195,7 +197,22 @@ h2#text
   color: #fff
 }
 
-
+/* ------------------------------------------------- Skills ------------------------------------------------- */
+.experiences{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.experiences .box {
+  width: calc(50% - 20px); 
+  display: inline-block; 
+  margin: 10px; 
+  vertical-align: top; 
+  box-sizing: border-box; 
+}
 .container
 {
 	position: relative;
@@ -265,12 +282,6 @@ h2#text
 	transform: translateY(40px);
 }
 
-@media (max-width: 900px) {
-  .box {
-    width: 45%;
-    margin: 0 5%;
-  }
-}
 .box .content h2
 {
 	position: absolute;
@@ -326,31 +337,7 @@ h2#text
 	color: #000;
 	background: #fff;
 }
-.experiences{
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  align-items: center;
-  text-align: center;
-  padding: 50px;
-}
-
-.experiences .box {
-  width: calc(50% - 20px); 
-  display: inline-block; 
-  margin: 10px; 
-  vertical-align: top; 
-  box-sizing: border-box; 
-}
-
-@media (max-width: 900px) {
-  .experiences .box {
-    width: calc(100% - 20px);
-  }
-}
-
-
-
+/* ------------------------------------------------- Goals ------------------------------------------------- */
 .goals{
     font-size: 16px;
     color: #fff;
@@ -416,6 +403,7 @@ h2#text
   border-bottom: 0;
   border-bottom-right-radius: 0;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -462,89 +450,7 @@ h2#text
   right: -45px;
 }
 
-@media (max-width: 900px) {
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 0;
-  }
-  .card:nth-child(even) {
-    padding: 30px 0 30px 0;
-  }
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 0;
-    border-radius: 50px 50px 0 0;
-  }
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 0 5px 0;
-    border-radius: 0 0 50px 50px;
-  }
-  .card:nth-child(odd) > .info > .title {
-    text-align: center;
-  }
-  .card:nth-child(odd) > .info > .text{
-    text-align: center;
-  }
-  .card:nth-child(even) > .info > .title {
-    text-align: center;
-  }
-  .card:nth-child(even) > .info > .text{
-    text-align: center;
-  }
-  .card:nth-child(odd) > .info > .title::before {
-    left: 0px;
-  }
-  .card:nth-child(even) > .info > .title::before {
-    right: 0px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 0;
-  }
-  .card:nth-child(even) {
-    padding: 30px 0 30px 0;
-  }
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 0;
-    border-radius: 50px 50px 0 0;
-  }
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 0 5px 0;
-    border-radius: 0 0 50px 50px;
-  }
-  .card:nth-child(odd) > .info > .title {
-    text-align: center;
-  }
-  .card:nth-child(odd) > .info > .text{
-    text-align: center;
-  }
-  .card:nth-child(even) > .info > .title {
-    text-align: center;
-  }
-  .card:nth-child(even) > .info > .text{
-    text-align: center;
-  }
-  .card:nth-child(odd) > .info > .title::before {
-    left: 0px;
-  }
-  .card:nth-child(even) > .info > .title::before {
-    right: 0px;
-  }
-}
-
-/* --------------------------------- */
+/* ------------------------------------------------- Contact me ------------------------------------------------- */
 .menu
 {
   position: relative;
@@ -625,3 +531,38 @@ h2#text
   text-align: center;
 }
 
+/* ------------------------------------------------- Responsive ------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  .menu li 
+  {
+    transform: rotate(calc(360deg/6 * var(--i)));
+    transform-origin: 100px;
+  }
+  .menu.active li 
+  {
+    scale: 1;
+  }
+  .menu li a 
+  {
+    transform: rotate(calc(360deg/-6 * var(--i)));
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.75em;
+    color: var(--clr);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    transition: 0.5s;
+  }
+  .menu li:hover a 
+  {
+    font-size: 2.5em;
+    box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+  }
+  .experience-box {
+    width: 80%;
+  }
+}

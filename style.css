@@ -113,11 +113,19 @@ h2#text
   text-decoration: none;
   padding: 8px 30px;
   border-radius: 40px;
-  background: #fff;
-  color: #2b1055;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
   transform: translateY(100px);
   font-size: 1.5em;
   z-index: 9;
+  transition: 0.5s;
+}
+#btn:hover
+{
+  background: #ffffff;
+  color: #2b1055;
+  border-color: #fff;
 }
 /* ------------------------------------------------- About me ------------------------------------------------- */
 .about
@@ -140,15 +148,15 @@ h2#text
   color: #fff;
   text-align: center;
 }
-/* ------------------------------------------------- Responsive ------------------------------------------------- */
-@media (max-width: 768px)
-{
-  .about
-  {
-    padding: 100px 50px;
-  }
-}
 /* ------------------------------------------------- Portfolio ------------------------------------------------- */
+.Title{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
 .portfolio p{
     font-size: 40px;
     font-weight: 700;
@@ -204,100 +212,6 @@ h2#text
 .details a{
   color: #fff
 }
-/* ------------------------------------------------- Responsive ------------------------------------------------- */
-@media (max-width: 768px)
-{
-  section
-  {
-    height: auto;
-    padding: 100px 50px;
-  }
-  section h2
-  {
-    font-size: 5vw;
-  }
-  section h2#text
-  {
-    right: -200px;
-  }
-  section img#mountains_front
-  {
-    display: none;
-  }
-  section .btn
-  {
-    transform: translateY(0px);
-  }
-  .about
-  {
-    padding: 50px 50px;
-  }
-  .about h2
-  {
-    font-size: 2em;
-  }
-  .about p
-  {
-    font-size: 1em;
-  }
-  .portfolio p{
-    font-size: 30px;
-  }
-  .swiper-slide
-  {
-    width: 200px;
-    height: 300px;
-  }
-  .swiper-slide .imgBx
-  {
-    height: 200px;
-  }
-  .swiper-slide .details h3
-  {
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .swiper-slide .details h3 span
-  {
-    font-size: 12px;
-  }
-  .swiper-slide .details p
-  {
-    font-size: 12px;
-  }
-  .swiper-slide .details a
-  {
-    font-size: 12px;
-  }
-  .swiper-slide .details a:hover
-  {
-    background: #fff;
-    color: #000;
-  }
-  .swiper-slide .details
-  {
-    padding: 10px;
-  }
-  .swiper-slide .details h3
-  {
-    text-align: center;
-  }
-  .swiper-slide .details p
-  {
-    text-align: center;
-  }
-  .swiper-slide .details a
-  {
-    text-align: center;
-  }
-  .swiper-slide .details a:hover
-  {
-    background: #fff;
-    color: #000;
-  }
-
-}
-
 /* ------------------------------------------------- Skills ------------------------------------------------- */
 .experiences{
   font-size: 40px;
@@ -437,28 +351,6 @@ h2#text
 {
 	color: #000;
 	background: #fff;
-}
-/* ------------------------------------------------- Responsive ------------------------------------------------- */
-@media (max-width: 990px)
-{
-  .container
-  {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
-@media (max-width: 767px)
-{
-  .container
-  {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-@media (max-width: 575px)
-{
-  .container
-  {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
 }
 /* ------------------------------------------------- Goals ------------------------------------------------- */
 .goals{
@@ -652,40 +544,4 @@ h2#text
   width: 40%;
   margin: 10px;
   text-align: center;
-}
-
-/* ------------------------------------------------- Responsive ------------------------------------------------- */
-@media screen and (max-width: 600px) {
-  .menu li 
-  {
-    transform: rotate(calc(360deg/6 * var(--i)));
-    transform-origin: 100px;
-  }
-  .menu.active li 
-  {
-    scale: 1;
-  }
-  .menu li a 
-  {
-    transform: rotate(calc(360deg/-6 * var(--i)));
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.75em;
-    color: var(--clr);
-    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
-    transition: 0.5s;
-  }
-  .menu li:hover a 
-  {
-    font-size: 2.5em;
-    box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
-  }
-  .experience-box {
-    width: 80%;
-  }
 }

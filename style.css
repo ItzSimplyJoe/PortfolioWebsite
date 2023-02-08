@@ -513,9 +513,10 @@ h2#text
 /* ------------------------------------------------- Contact me ------------------------------------------------- */
 .menu
 {
-  position: relative;
+  position: absolute;
   width: 280px;
-  height: 280px;
+  padding-top: 10px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,4 +590,64 @@ h2#text
   width: 40%;
   margin: 10px;
   text-align: center;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactinfo h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+}
+.contactinfo p{
+  font-size: 18px;
+  font-weight: 200;
+  color: #fff;
+  position: relative;
+}
+.contactlinks p{
+  font-size: 18px;
+  font-weight: 200;
+  color: #fff;
+  position: relative;
+}
+.contactlinks a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.contactlinks i {
+  margin-right: 10px;
+  color: #fff;
+}
+
+.contactlinks a:hover {
+  color: #00bcd4;
+}
+
+/* ------------------------------------------------- Footer ------------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #1c0522;
+  color: #fff;
+  font-size: 14px;
 }

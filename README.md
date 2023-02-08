@@ -9,7 +9,6 @@ Created using HTML, CSS and JS
 - Simple timeline feature
 - Animated socials button
 
-## links:
-- https://www.itzsimplyjoe.me
-- https://www.itzsimplyjoe.tech
-- https://www.itzsimplyjoe.live
+## How to view:
+##### The site is currently hosted and can be accessed by anyone using the link itzsimplyjoe.me
+##### It is still a work in progress so there will be updates to come!

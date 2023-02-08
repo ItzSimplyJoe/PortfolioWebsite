@@ -9,7 +9,7 @@ Created using HTML, CSS and JS
 - Simple timeline feature
 - Animated socials button
 
-##links:
+## links:
 - https://www.itzsimplyjoe.me
 - https://www.itzsimplyjoe.tech
 - https://www.itzsimplyjoe.live

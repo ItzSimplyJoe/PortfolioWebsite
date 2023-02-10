@@ -380,7 +380,7 @@ h2#text
     margin-top: 20px 20px 20px;
   }
 }
-@media screen and (min-width: 1656px)
+@media screen and (max-width: 1656px)
 {
   .container
 {

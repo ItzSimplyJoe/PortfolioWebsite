@@ -224,7 +224,7 @@ h2#text
 .portfolio-text{
   height: 100%;
   width: 50%;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   background: #2b1055;
   text-align: center;  
 }
@@ -290,7 +290,7 @@ h2#text
 .portfolio-text2{
   height: 100%;
   width: 50%;
-  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   background: #2b1055;
   text-align: center;  
 }
@@ -323,6 +323,7 @@ h2#text
   display: flex;
   position: relative;
   margin-top: 5%;
+  margin-left: 39%;
   opacity: 75%;
 }
 .portfolio-text2 a:hover{

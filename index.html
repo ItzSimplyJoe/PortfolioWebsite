@@ -28,10 +28,15 @@
       <div class="content">
     </section>
 <!-- ================================================================================= -->
-    <div class="about" id="about">
+<div class="about" id="about">
+  <div class="image-text">
+    <div class="image"><img src="images/developer.png"></div>
+    <div class="text">
       <h2>About Me</h2>
-      <p>Hello, my name is Joe Bostock, I am a 17 year old A level student. I am currently studying Maths, French and Computer Science. In the future i would love to have the ability to do what I enjoy most and be able to create software, whether that is websites like this, or using other languages to create things like the virtual assistant that i maded. I decided to create this website to demonstrate some skills that i have aquired over my time learning HTML, CSS and JS. Enjoy the website.</p>
-    </div class="about">
+      <p>Hello, my name is Joe Bostock, I am a 17 year old A level student. I am currently studying Maths, French and Computer Science. In the future i would love to have the ability to do what I enjoy most and be able to create software, whether that is websites like this, or using other languages to create things like the virtual assistant that i made. I decided to create this website to demonstrate some skills that i have aquired over my time learning HTML, CSS and JS. Enjoy the website.</p>
+    </div>
+  </div>
+</div>
 <link rel="stylesheet" type="text/css" href="swiper.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <div class="portfolio" id = "work">
@@ -90,7 +95,6 @@
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
 <!-- ================================================================================= -->
   <div class="experiences" id = "skills">
@@ -132,43 +136,55 @@
 </div>
 </div>  
 <!-- ================================================================================= -->
-<div class="goals" id = "goals">
-    <p>My Goals</p>
-    <div class="timeline">
-        <div class="outer">
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Finish My A-levels</h3>
-              <p class = "text">I plan on finishing my A-Levels in Maths, French and Computer Science. </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Get an apprenticeship</h3>
-              <p class = "text">I would love to get an apprenticeship doing the thing that i love, which is software development. Creating projects and developing things that people can use.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Finish the apprenticeship</h3>
-              <p class = "text">Once i start the apprenticeship, i plan on then finishing it and gaining the skills: <br>- A Degree<br>- Experience<br>- And hopefully a job</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Get a job</h3>
-              <p class = "text">After completing the apprenticeship, I would like to then go into a job using the skills that I have obtained and continue to pursue a career in software development.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="info">
-              <h3 class="title">Retire</h3>
-              <p class = "text">Once I have worked at my job for all the years that I wish to be there for, i would like to comfortably retire.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div id="color">
+	<span class="drop"></span>
 </div>
+
+<h1>My Goals</h1>
+
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner">Finish School</div></li>
+		<li class="step step02"><div class="step-inner">Apprenticeship</div></li>
+		<li class="step step03"><div class="step-inner">Finish Apprenticeship</div></li>
+		<li class="step step04"><div class="step-inner">Get a Job</div></li>
+		<li class="step step05"><div class="step-inner">Retire</div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>Finish School</h2>
+		<p>I plan on finishing my A-Levels in Maths, French and Computer Science. </p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>Apprenticeship</h2>
+		<p>I would love to get an apprenticeship doing the thing that i love, which is software development. Creating projects and developing things that people can use.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>Finish Apprenticeship</h2>
+		<p>Once i start the apprenticeship, i plan on then finishing it and gaining the skills: <br>- A Degree<br>- Experience<br>- And hopefully a job</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>Get a Job</h2>
+		<p>After completing the apprenticeship, I would like to then go into a job using the skills that I have obtained and continue to pursue a career in software development.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>Retire</h2>
+		<p>Once I have worked at my job for all the years that I wish to be there for, i would like to comfortably retire.</p>
+	</div>
+	</div>
+</div>
+<!-- ================================================================================= -->
 <div class="menu" id = "contact"> 
   <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
   <li style="--i:1;--clr:#25D366;">
@@ -203,6 +219,47 @@
 
 
 <!-- ================================================================================= -->
+<script>
+  //make the timeline work
+  const progress = document.getElementById('line-progress');
+  const steps = document.querySelectorAll('.step');
+  const contents = document.querySelectorAll('.section-content');
+  let active = 1;
+
+  steps.forEach((step, idx) => {
+    step.addEventListener('click', () => {
+      active = idx + 1;
+
+      document.querySelector('.step.active').classList.remove('active');
+      document.querySelector('.section-content.active').classList.remove('active');
+
+      step.classList.add('active');
+      contents[idx].classList.add('active');
+
+      update();
+    });
+  });
+
+  function update() {
+    progress.style.width = ((active - 1) / (steps.length - 1)) * 100 + '%';
+
+    steps.forEach((step, idx) => {
+      if (idx < active) {
+        step.classList.add('active');
+      } else {
+        step.classList.remove('active');
+      }
+    });
+
+    contents.forEach((content, idx) => {
+      if (idx === active - 1) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+  }
+</script>
   <script type="text/javascript" src="swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {

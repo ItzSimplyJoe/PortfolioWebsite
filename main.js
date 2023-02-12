@@ -49,7 +49,6 @@ window.addEventListener('scroll', function() {
     moon.style.top = -value * -1.05 + 'px';
     stars.style.left = value * 0.25 + 'px';
     mountains_behind.style.top =-value * -0.5 + 'px';
-    header.style.top =-value * -0.5 + 'px';
     mountains_front.style.top =-value * 0 + 'px';
     text.style.marginTop = value * 1.5 + 'px';
     btn.style.marginTop = value * 1.5 + 'px';
@@ -61,3 +60,22 @@ let toggle = document.querySelector('.toggle');
     toggle.onclick = function(){
       menu.classList.toggle('active')
     }
+  
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+
+
+const links = header.querySelectorAll("a");
+const sections = document.querySelectorAll("section");
+links.forEach(link => {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    const sectionId = this.getAttribute("href").substring(1);
+    document.querySelector(`#${sectionId}`).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});

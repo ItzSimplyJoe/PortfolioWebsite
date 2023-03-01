@@ -108,7 +108,7 @@ h2#text
 {
   position: absolute;
   color: #fff;
-  right: -350px;
+  right: -450px;
   white-space: nowrap;
   font-size: 7.5vw;
   transform: translateY(0px);
@@ -330,7 +330,7 @@ h2#text
   position: relative;
   cursor: pointer;
   margin-top: 5%;
-  margin-left: 39%;
+  margin-left: 37%;
   opacity: 75%;
 }
 .portfolio-text2 a:hover{
@@ -372,7 +372,7 @@ h2#text
   width: 100%;
   border-radius: 30px;
   padding-top: 15%;
-  transform: scale(0.6);
+  transform: scale(0.8);
 }
 .portfolio-image2{
   height: 100%;
@@ -386,7 +386,7 @@ h2#text
   width: 100%;
   border-radius: 30px;
   padding-top: 15%;
-  transform: scale(0.6);
+  transform: scale(0.8);
 }
 .cssbutton{
   transition: all 0.5s ease 0s;
@@ -402,6 +402,7 @@ h2#text
 }
 .pythonbutton:hover{
   color: rgb(75,139,190);
+  background:transparent;
   transform: translateY(-10px);
   box-shadow:
   0.7px 3.6px 1.6px rgba(0, 0, 0, 0.035),
@@ -415,6 +416,7 @@ h2#text
 }
 .jsbutton:hover{
   color: #f0db4f;
+  background:transparent;
   transform: translateY(-10px);
   box-shadow:
   0.7px 3.6px 1.6px rgba(0, 0, 0, 0.035),
@@ -428,6 +430,7 @@ h2#text
 }
 .cssbutton:hover{
   color: #264de4;
+  background:transparent;
   transform: translateY(-10px);
   box-shadow:
   0.7px 3.6px 1.6px rgba(0, 0, 0, 0.035),
@@ -441,7 +444,10 @@ h2#text
 }
 .htmlbutton:hover{
   color: #e34c26;
+  background:transparent;
   transform: translateY(-10px);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   box-shadow:
   0.7px 3.6px 1.6px rgba(0, 0, 0, 0.035),
   1.5px 7.6px 3.6px rgba(0, 0, 0, 0.049),
@@ -619,7 +625,7 @@ h2#text
 	color: #000;
 	background: #fff;
 }
-/* ------------------------------------------------- skills responsive ------------------------------------------------- */
+/* ------------------------------------------------- Skills Responsive ------------------------------------------------- */
 @media screen and (max-width: 700px)
 {
   .container
@@ -662,7 +668,6 @@ h2#text
   align-items: center;
 }
 }
-
 /* ------------------------------------------------- Goals ------------------------------------------------- */
 body {
 	margin:0;
@@ -701,7 +706,6 @@ h1 {
 	line-height:23px;
 }
 
-/* --- Start progress bar --- */
 
 .process-wrapper {
 	margin:auto;

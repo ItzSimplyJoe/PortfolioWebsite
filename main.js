@@ -1,42 +1,44 @@
+//Time line / goals section
+
 const progress = document.getElementById('line-progress');
-  const steps = document.querySelectorAll('.step');
-  const contents = document.querySelectorAll('.section-content');
-  let active = 1;
+const steps = document.querySelectorAll('.step');
+const contents = document.querySelectorAll('.section-content');
+let active = 1;
+
+steps.forEach((step, idx) => {
+  step.addEventListener('click', () => {
+    active = idx + 1;
+
+    document.querySelector('.step.active').classList.remove('active');
+    document.querySelector('.section-content.active').classList.remove('active');
+
+    step.classList.add('active');
+    contents[idx].classList.add('active');
+
+    update();
+  });
+});
+
+function update() {
+  progress.style.width = ((active - 1) / (steps.length - 1)) * 100 + '%';
 
   steps.forEach((step, idx) => {
-    step.addEventListener('click', () => {
-      active = idx + 1;
-
-      document.querySelector('.step.active').classList.remove('active');
-      document.querySelector('.section-content.active').classList.remove('active');
-
+    if (idx < active) {
       step.classList.add('active');
-      contents[idx].classList.add('active');
-
-      update();
-    });
+    } else {
+      step.classList.remove('active');
+    }
   });
 
-  function update() {
-    progress.style.width = ((active - 1) / (steps.length - 1)) * 100 + '%';
-
-    steps.forEach((step, idx) => {
-      if (idx < active) {
-        step.classList.add('active');
-      } else {
-        step.classList.remove('active');
-      }
-    });
-
-    contents.forEach((content, idx) => {
-      if (idx === active - 1) {
-        content.classList.add('active');
-      } else {
-        content.classList.remove('active');
-      }
-    });
-  }
-
+  contents.forEach((content, idx) => {
+    if (idx === active - 1) {
+      content.classList.add('active');
+    } else {
+      content.classList.remove('active');
+    }
+  });
+}
+// Paralax Scrolling Effect
 let moon = document.getElementById('moon');
 let stars = document.getElementById('stars');
 let mountains_behind = document.getElementById('mountains_behind');
@@ -60,14 +62,14 @@ let toggle = document.querySelector('.toggle');
     toggle.onclick = function(){
       menu.classList.toggle('active')
     }
-  
+// Sticky Header  
 window.addEventListener('scroll', function() {
   var header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 0);
 });
 
 
-
+// Header Scroll
 const links = header.querySelectorAll("a");
 const sections = document.querySelectorAll("section");
 links.forEach(link => {

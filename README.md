@@ -3,6 +3,7 @@ Portfolio Website is a simple, static website built using HTML, CSS, and JavaScr
 
 ## Usage
 To view the website, simply open the index.html file in your web browser. The website is designed to be responsive and should work on desktop and mobile devices.
+You can view how the website looks on http://www.itzsimplyjoe.me
 
 ## Deployment
 To deploy the website to a web server, simply upload the contents of the public folder to your server. The public folder contains all of the necessary files for the website, including HTML, CSS, and JavaScript.

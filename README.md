@@ -1,5 +1,8 @@
 # Portfolio Website
-Portfolio Website is a simple, static website built using HTML, CSS, and JavaScript. This website serves as a showcase for my personal projects and experience.
+![HTML image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JS image](https://img.shields.io/badge/JavaScript-FFD43B?style=for-the-badge&logo=javascript&logoColor=white)
+######Portfolio Website is a simple, static website built using HTML, CSS, and JavaScript. This website serves as a showcase for my personal projects and experience.
 
 ## Usage
 To view the website, simply open the index.html file in your web browser. The website is designed to be responsive and should work on desktop and mobile devices.

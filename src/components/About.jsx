@@ -42,8 +42,8 @@ const About = () => {
     Hello, my name is Joe Bostock, I am a 17 year old A level student. 
     I am currently studying Maths, French and Computer Science. 
     In the future i would love to have the ability to do what I enjoy most 
-    and be able to create software, whether that is websites like this, o
-    r using other languages to create things like the virtual assistant that i made. 
+    and be able to create software, whether that is websites like this, or 
+    using other languages to create things like the virtual assistant that i made. 
     I decided to create this website to demonstrate some skills that i have 
     aquired over my time learning web development. Enjoy the website.
     </motion.p>

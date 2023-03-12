@@ -116,7 +116,7 @@ import {
   const experiences = [
     {
       title: "A level Student",
-      company_name: "Cleeve School",
+      company_name: "My School",
       icon: school,
       iconBg: "#232631",
       date: "September 2021 - June 2023",
@@ -129,7 +129,7 @@ import {
     },
     {
       title: "Running Computer Science Club",
-      company_name: "Cleeve School",
+      company_name: "My School",
       icon: club,
       iconBg: "#232631",
       date: "September 2022 - January 2023",

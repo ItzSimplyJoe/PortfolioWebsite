@@ -24,6 +24,8 @@ import clientwork from "./company/clientwork.png";
 import portfolio from "./portfolio.png";
 import ecommerce from "./ecommerce.png";
 import virtualassistant from "./virtualassistant.png";
+import linkedin from "./linkedin.png";
+import whatsapp from "./whatsapp.png";
 
 export {
   logo,
@@ -51,5 +53,7 @@ export {
   school,
   raytheon,
   ecommerce,
+  linkedin,
+  whatsapp,
   virtualassistant,
 };

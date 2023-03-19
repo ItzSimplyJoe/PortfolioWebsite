@@ -29,7 +29,7 @@ import {
       title: "About",
     },
     {
-      id: "work",
+      id: "works",
       title: "Work",
     },
     {
@@ -250,5 +250,5 @@ import {
       source_code_link: "https://github.com/ItzSimplyJoe/Shopwebsite",
     },
   ];
-  
+
   export { services, technologies, experiences, projects };

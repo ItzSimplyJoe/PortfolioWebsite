@@ -12,6 +12,29 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+.menu-enter {
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateX(100%) scale(0.9);
+  transition: opacity 600ms ease-in-out, transform 600ms ease-in-out;
+}
+
+
 
 .hash-span {
   margin-top: -100px;

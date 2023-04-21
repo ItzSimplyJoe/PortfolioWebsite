@@ -20,7 +20,12 @@ import {
     threejs,
     portfolio,
     vlang,
+    ruby,
+    c,
+    cplusplus,
+    csharp,
     jquery,
+    java,
   } from "../assets";
   
   export const navLinks = [
@@ -52,35 +57,45 @@ import {
       icon: ae,
     },
   ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
+
+  const techimgoodwith = [
     {
       name: "Python",
       icon: python,
+    },
+    {
+      name: "HTML",
+      icon: html,
+    },
+    {
+      name: "CSS",
+      icon: css,
+    },
+    {
+      name: "Adobe Premiere",
+      icon: pr,
+    },
+    {
+      name: "Adobe After Effects",
+      icon: ae,
+    }
+  ];
+  const techiveused = [
+    {
+      name: "JavaScript",
+      icon: javascript,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Flask",
-      icon: flask,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
+    },
+    {
+      name: "Flask",
+      icon: flask,
     },
     {
       name: "Sqlite",
@@ -93,25 +108,40 @@ import {
     {
       name: "git",
       icon: git,
-    },
+    },  
     {
-      name: "Vlang",
-      icon: vlang,
-    },
-    {
-      name: "jQuery",
+      name: 'JQuery',
       icon: jquery,
     },
     {
-      name: "Adobe After Effects",
-      icon: ae,
+      name: "Java",
+      icon: java,
+    },
+  ];
+
+  const techimlearning = [
+    {
+      name: 'Vlang',
+      icon: vlang,
     },
     {
-      name: "Adobe Premiere Pro",
-      icon: pr,
-    }
-
+      name: 'Ruby',
+      icon: ruby,
+    },
+    {
+      name: 'C',
+      icon: c,
+    },
+    {
+      name: 'C++',
+      icon: cplusplus,
+    },
+    {
+      name: 'C#',
+      icon: csharp,
+    },
   ];
+  
   
   const experiences = [
     {
@@ -119,9 +149,9 @@ import {
       company_name: "My School",
       icon: school,
       iconBg: "#232631",
-      date: "September 2021 - June 2023",
+      date: "September 2021 - May 2023",
       points: [
-        "Computer Science: \n Here i learned the fundamentals of everything to do with computer science.",
+        "Computer Science: \n Here I learned the fundamentals of everything to do with computer science.",
         "I learned about the basics of programming, and how to use python to create programs.",
         "I undertook my coursework project and decided to create a virtual assistant, that is built using machine learning.",
         "Maths and French: \n I am currently studying for my A levels in Maths and French.",
@@ -134,7 +164,7 @@ import {
       iconBg: "#232631",
       date: "September 2022 - January 2023",
       points: [
-        "I created a club where i would teach younger students about how to utilise certain bits of hardware and software, for example:",
+        "I created a club where I would teach younger students about how to utilise certain bits of hardware and software, for example:",
         "Programming Drones using Python",
         "Creating a VR game using unity",
         "Hacking into windows laptops using the windows utilman hack",
@@ -149,7 +179,7 @@ import {
       iconBg: "#232631",
       date: "September 2019 - October 2022",
       points: [
-        "Over the course of these several years i worked as a freelance developer, configuerer and video editor. \n I worked with multiple companies and individuals. \n Here are some of the projects i worked on:",
+        "Over the course of these several years I worked as a freelance developer, configuerer and video editor. \n I worked with multiple companies and individuals. \n Here are some of the projects I worked on:",
         "Programming and running a minecraft server that was used by 100+ people and generated over $1500 in revenue.",
         "Editing videos and montages for an esports organisation called Division6ix",
         "Editing videos and montages for an esports organisation called GenkeiEsports"
@@ -162,7 +192,7 @@ import {
       iconBg: "#fff",
       date: "August 2022 - August 2022",
       points: [
-        "I did a work of work experience for Raytheon where i worked with a team to do day-to-day tasks such as:",
+        "I did a work of work experience for Raytheon where I worked with a team to do day-to-day tasks such as:",
         "Learning linux and how to use it by using a program called Bandit",
         "Created a plesk server from scratch and configured it to work correctly",
         "Learned how to work as a part of a team",
@@ -251,4 +281,4 @@ import {
     },
   ];
 
-  export { services, technologies, experiences, projects };
+  export { services, techimgoodwith, techimlearning, techiveused, experiences, projects };

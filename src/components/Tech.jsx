@@ -1,49 +1,73 @@
-import React from 'react'
-import Tilt from 'react-tilt'
-import { motion } from 'framer-motion'
+import React from 'react';
+import Tilt from 'react-tilt';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { techimgoodwith, techimlearning, techiveused } from '../constants';
+import { textVariant, zoomIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
-import { styles } from '../styles'
-import { technologies } from '../constants'
-import { zoomIn, textVariant } from '../utils/motion'
-import { SectionWrapper } from '../hoc'
-const TechCard = ({ index, name, icon }) => {
+const TechCard = ({ title, technologies, delay }) => {
   return (
-    <Tilt className="xs:w-[200px] w-full">
+    <Tilt className="w-full">
       <motion.div
-      variants={zoomIn(0.25 * index,0.75)}
-      className="w-full blue-purple-gradient p-[1px] rounded-[15px] shadow-card background-glow"
+        variants={zoomIn(delay, 1)}
+        className="h-full p-[1px] rounded-[15px] shadow-card background-glow"
+        style={{ minHeight: '400px' }}
       >
-        <div
-        options={{
-          max:45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[15px] py-5 px-12 min-h-[200px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt={name} className="w-18 h-20 object-contain" />
-          <h3 className='text-white text-[14px] font-bold text-center'>{name}</h3>
-
+        <div className="bg-tertiary h-full rounded-[15px] overflow-hidden">
+          <div className="p-8">
+            <h2 className="text-xl font-bold mb-4">{title}</h2>
+            <div className="flex flex-col gap-4 h-full">
+              {technologies.map((technology) => (
+                <div
+                  key={technology.name}
+                  className="flex items-start gap-4 h-full"
+                >
+                  <img
+                    src={technology.icon}
+                    alt={technology.name}
+                    className="w-6 h-6 object-contain"
+                  />
+                  <span className="text-white text-base font-medium">
+                    {technology.name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </motion.div>
     </Tilt>
-  )
-}
+  );
+};
+
 const Tech = () => {
   return (
     <>
-    <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What tech have I worked with?</p>
-      <h2 className={styles.sectionHeadText}>Skills.</h2>
-    </motion.div>
-    <div className="mt-20 flex flex-wrap gap-8 items-center align-items justify-center">
-      {technologies.map((technology, index) => (
-        <div className="mt-8 flex flex-wrap gap-8 items-center align-items justify-center" key={technology.name}>
-          <TechCard icon={technology.icon} index={index} {...technology} />
-        </div>
-      ))}
-    </div>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>What tech have I worked with?</p>
+        <h2 className={styles.sectionHeadText}>Skills.</h2>
+      </motion.div>
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <TechCard
+          title="Technologies I'm Experienced With"
+          technologies={techimgoodwith}
+          delay="0.5"
+        />
+        <TechCard
+          title="Technologies I've Used"
+          technologies={techiveused}
+          delay="1"
+        />
+        <TechCard
+          title="Technologies I Want to learn"
+          technologies={techimlearning}
+          delay="1.5"
+        />
+      </div>
     </>
-  )
+  );
 };
 
-export default SectionWrapper(Tech, "");
+
+export default SectionWrapper(Tech, 'tech');

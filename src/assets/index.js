@@ -26,6 +26,11 @@ import ecommerce from "./ecommerce.png";
 import virtualassistant from "./virtualassistant.png";
 import linkedin from "./linkedin.png";
 import whatsapp from "./whatsapp.png";
+import java from "./tech/java.png";
+import c from "./tech/c.png"
+import cplusplus from "./tech/cplusplus.png"
+import csharp from "./tech/csharp.png"
+import ruby from "./tech/ruby.png"
 
 export {
   logo,
@@ -33,7 +38,12 @@ export {
   ae,
   club,
   jquery,
+  c,
+  cplusplus,
+  csharp,
+  ruby,
   pr,
+  java,
   github,
   menu,
   elf,

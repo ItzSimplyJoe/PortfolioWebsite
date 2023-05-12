@@ -18,7 +18,6 @@ import {
     club,
     ecommerce,
     threejs,
-    portfolio,
     vlang,
     ruby,
     c,
@@ -34,7 +33,7 @@ import {
       title: "About",
     },
     {
-      id: "works",
+      id: "Works",
       title: "Work",
     },
     {
@@ -228,27 +227,6 @@ import {
       ],
       image: elf,
       source_code_link: "https://github.com/ItzSimplyJoe/Python-ElfGame",
-    },
-    {
-      name: "Portfolio Website",
-      description:
-        "Portfolio Website is a simple, static website built using HTML, CSS, and JavaScript. This website serves as a showcase for my personal projects and experience.",
-      tags: [
-        {
-          name: "HTML",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "JavaScript",
-          color: "yellow-text-gradient",
-        }
-      ],
-      image: portfolio,
-      source_code_link: "https://github.com/ItzSimplyJoe/PortfolioWebsite",
     },
     {
       name: "Ecommerce Website",

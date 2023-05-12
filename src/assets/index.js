@@ -21,7 +21,6 @@ import raytheon from "./company/raytheon.png";
 import elf from "./elf.png";
 import club from "./company/club.png";
 import clientwork from "./company/clientwork.png";
-import portfolio from "./portfolio.png";
 import ecommerce from "./ecommerce.png";
 import virtualassistant from "./virtualassistant.png";
 import linkedin from "./linkedin.png";
@@ -49,7 +48,6 @@ export {
   elf,
   close,
   css,
-  portfolio,
   vlang,
   git,
   html,

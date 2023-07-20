@@ -39,7 +39,7 @@ const About = () => {
     
     <motion.p variants={fadeIn("", "", 0.1,1)}
     className= "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-    Hello, my name is Joe Bostock, I am a 17 year old A level student. 
+    Hello, my name is Joe Bostock, I am an 18 year old A level student. 
     I am currently studying Maths, French and Computer Science. 
     In the future I would love to have the ability to do what I enjoy most 
     and be able to create software, whether that is websites like this, or 

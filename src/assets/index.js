@@ -30,6 +30,10 @@ import c from "./tech/c.png"
 import cplusplus from "./tech/cplusplus.png"
 import csharp from "./tech/csharp.png"
 import ruby from "./tech/ruby.png"
+import BarosaBot from "./BarosaBot.jpg"
+import barosawebsite from "./barosawebsite.png"
+import minecraft from "./minecraft.jpg"
+import simpleutilz from "./simpleutilz.jpg"
 
 export {
   logo,
@@ -45,6 +49,10 @@ export {
   java,
   github,
   menu,
+  minecraft,
+  simpleutilz,
+  barosawebsite,
+  BarosaBot,
   elf,
   close,
   css,

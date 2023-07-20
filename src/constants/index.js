@@ -16,7 +16,6 @@ import {
     clientwork,
     git,
     club,
-    ecommerce,
     threejs,
     vlang,
     ruby,
@@ -25,6 +24,10 @@ import {
     csharp,
     jquery,
     java,
+    barosawebsite,
+    BarosaBot,
+    minecraft,
+    simpleutilz,
   } from "../assets";
   
   export const navLinks = [
@@ -33,7 +36,7 @@ import {
       title: "About",
     },
     {
-      id: "Works",
+      id: "works",
       title: "Work",
     },
     {
@@ -229,18 +232,10 @@ import {
       source_code_link: "https://github.com/ItzSimplyJoe/Python-ElfGame",
     },
     {
-      name: "Ecommerce Website",
+      name: "Server Website",
       description:
-        "A web application built using HTML, CSS, and JavaScript on the front-end and Flask on the back-end. The purpose of the application is to create an online store where users can browse, search, and purchase products.",
+        "A website made for a Minecraft server called BarosaMC, consisting of a responsive design and clean UI.",
       tags: [
-        {
-          name: "Python",
-          color: "blue-text-gradient",
-        },
-        {
-            name: "Flask",
-            color: "green-text-gradient",
-        },
         {
           name: "HTML",
           color: "orange-text-gradient",
@@ -254,8 +249,47 @@ import {
           color: "yellow-text-gradient",
         }
       ],
-      image: ecommerce,
-      source_code_link: "https://github.com/ItzSimplyJoe/Shopwebsite",
+      image: barosawebsite,
+      source_code_link: "https://github.com/ItzSimplyJoe/BarosaMC-Website",
+    },
+    {
+      name: "Discord Bot",
+      description:
+        "A discord bot made for general use, it has features such as Moderation, ticket systems and general commands.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: BarosaBot,
+      source_code_link: "https://github.com/ItzSimplyJoe/Barosabot",
+    },
+    {
+      name: "SimpleUtilz",
+      description:
+        "SimpleUtilz is a python package that was made to make your life easier when creating programs. It has many commands that change many lines of code into a single line.",
+      tags: [
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: simpleutilz,
+      source_code_link: "https://github.com/ItzSimplyJoe/SimpleUtilz",
+    },
+    {
+      name: "Minecraft Plugin",
+      description:
+        "A Simple minecraft plugin for the basics of any server, with customisable messages and many features",
+      tags: [
+        {
+          name: "Java",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: minecraft,
+      source_code_link: "https://github.com/ItzSimplyJoe/Minecraft-Plugin",
     },
   ];
 

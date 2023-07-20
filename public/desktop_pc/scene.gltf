@@ -51505,7 +51505,7 @@
       "source": "https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66",
       "title": "Gaming Desktop PC"
     },
-    "generator": "Sketchfab-12.82.3",
+    "generator": "Sketchfab-15.10.0",
     "version": "2.0"
   },
   "bufferViews": [
@@ -51537,6 +51537,11 @@
       "byteLength": 4282040,
       "uri": "scene.bin"
     }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_clearcoat",
+    "KHR_materials_specular",
+    "KHR_materials_emissive_strength"
   ],
   "images": [
     {
@@ -51696,6 +51701,20 @@
   "materials": [
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.10819080591483707
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.7419986703335019
+        }
+      },
       "name": "Material",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51709,6 +51728,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
       "name": "Material.074",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51788,6 +51817,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.669212286239753
+        }
+      },
       "name": "Material.074_3",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51809,6 +51848,11 @@
       "emissiveTexture": {
         "index": 9
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4.14459941911632
+        }
+      },
       "name": "Material.074_4",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51822,9 +51866,14 @@
       "doubleSided": true,
       "emissiveFactor": [
         1.0,
-        0.7195414379581087,
+        0.2616964383175027,
         0.0
       ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 2.749527057319467
+        }
+      },
       "name": "Material.023",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51838,9 +51887,14 @@
       "doubleSided": true,
       "emissiveFactor": [
         1.0,
-        0.48144221951631094,
+        0.2616964383175027,
         0.0
       ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.839697256147606
+        }
+      },
       "name": "Material.024",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51872,6 +51926,11 @@
       ],
       "emissiveTexture": {
         "index": 13
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4.569186659663188
+        }
       },
       "name": "Material.074_6",
       "pbrMetallicRoughness": {
@@ -51915,6 +51974,11 @@
       "emissiveTexture": {
         "index": 17
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.4151100156007377
+        }
+      },
       "name": "Material.074_9",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51934,6 +51998,11 @@
       "emissiveTexture": {
         "index": 19
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 2.0823185364601025
+        }
+      },
       "name": "Material.074_10",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -51952,6 +52021,19 @@
       ],
       "emissiveTexture": {
         "index": 20
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.839697256147606
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.3598701538413204
+        }
       },
       "name": "Material.074_11",
       "pbrMetallicRoughness": {
@@ -52047,6 +52129,16 @@
       "emissiveTexture": {
         "index": 24
       },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.7662607983647515
+        }
+      },
       "name": "Material.074_15",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52134,6 +52226,11 @@
       "emissiveTexture": {
         "index": 28
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.4151100156007377
+        }
+      },
       "name": "Material.074_18",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52161,9 +52258,14 @@
       "doubleSided": true,
       "emissiveFactor": [
         1.0,
-        0.2827304251440078,
+        0.1441760768413547,
         0.0
       ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.9610078963038542
+        }
+      },
       "name": "Material.049",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52214,6 +52316,11 @@
       "emissiveTexture": {
         "index": 29
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.3544546955226135
+        }
+      },
       "name": "Material.074_19",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52232,6 +52339,11 @@
       "emissiveTexture": {
         "index": 30
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.5970759758351099
+        }
+      },
       "name": "Material.074_20",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52242,6 +52354,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.0
+        }
+      },
       "name": "Material.074_21",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52311,6 +52433,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.5842948381303793
+        }
+      },
       "name": "Material.074_23",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52343,6 +52475,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
       "name": "Material.074_25",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52382,10 +52524,15 @@
     {
       "doubleSided": true,
       "emissiveFactor": [
-        0.23572214716340706,
-        1.0,
-        1.0
+        0.12813094457564064,
+        0.6612338239125249,
+        0.8802973864971013
       ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 1.839697256147606
+        }
+      },
       "name": "Material.077",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52401,10 +52548,15 @@
     {
       "doubleSided": true,
       "emissiveFactor": [
-        0.007907801201354252,
-        1.0,
-        1.0
+        0.002274061626295175,
+        0.8896702258574387,
+        0.7264444134717982
       ],
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 3.4773908982569552
+        }
+      },
       "name": "Material.082",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52432,6 +52584,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.22642844966944745
+        }
+      },
       "name": "Material.074_26",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52470,6 +52632,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.6146224981694414
+        }
+      },
       "name": "Material.090",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52483,6 +52655,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
       "name": "Material.092",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52504,6 +52686,11 @@
       ],
       "emissiveTexture": {
         "index": 39
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 3.5380462183350794
+        }
       },
       "name": "Material.074_27",
       "pbrMetallicRoughness": {
@@ -52530,6 +52717,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.8511782464741251
+        }
+      },
       "name": "Material.098",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52576,6 +52773,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
       "name": "Material.044",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52592,6 +52799,16 @@
       "alphaCutoff": 0.5539671780913173,
       "alphaMode": "MASK",
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.638884626200691
+        }
+      },
       "name": "Material.074_28",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52698,6 +52915,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.5175739860444428
+        }
+      },
       "name": "Material.039",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52712,6 +52939,16 @@
     },
     {
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 0.5903603701381918
+        }
+      },
       "name": "Material.006",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
@@ -52790,6 +53027,11 @@
       "emissiveTexture": {
         "index": 46
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 9.421612265913112
+        }
+      },
       "name": "Material.074_32",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52808,6 +53050,11 @@
       ],
       "emissiveTexture": {
         "index": 47
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4.993773900210057
+        }
       },
       "name": "Tasten_2",
       "pbrMetallicRoughness": {
@@ -52828,6 +53075,11 @@
       "emissiveTexture": {
         "index": 48
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 4.0232887789600715
+        }
+      },
       "name": "Material.074_33",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52846,6 +53098,11 @@
       ],
       "emissiveTexture": {
         "index": 49
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 8.32981650450688
+        }
       },
       "name": "Material.074_34",
       "pbrMetallicRoughness": {
@@ -52866,6 +53123,11 @@
       "emissiveTexture": {
         "index": 50
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10.0
+        }
+      },
       "name": "Material.074_35",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52884,6 +53146,11 @@
       ],
       "emissiveTexture": {
         "index": 51
+      },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 5.600327100991297
+        }
       },
       "name": "Material.074_36",
       "pbrMetallicRoughness": {
@@ -52923,6 +53190,11 @@
       "emissiveTexture": {
         "index": 11
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 8.390471824585003
+        }
+      },
       "name": "Material.074_38",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52942,6 +53214,11 @@
       "emissiveTexture": {
         "index": 52
       },
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 8.269161184428755
+        }
+      },
       "name": "Material.074_39",
       "pbrMetallicRoughness": {
         "baseColorTexture": {
@@ -52955,6 +53232,16 @@
       "alphaCutoff": 0.3538046218335079,
       "alphaMode": "MASK",
       "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularFactor": 1.0
+        }
+      },
       "name": "Material.074_40",
       "pbrMetallicRoughness": {
         "baseColorTexture": {

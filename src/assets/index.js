@@ -26,14 +26,15 @@ import virtualassistant from "./virtualassistant.png";
 import linkedin from "./linkedin.png";
 import whatsapp from "./whatsapp.png";
 import java from "./tech/java.png";
-import c from "./tech/c.png"
-import cplusplus from "./tech/cplusplus.png"
-import csharp from "./tech/csharp.png"
-import ruby from "./tech/ruby.png"
-import BarosaBot from "./BarosaBot.jpg"
-import barosawebsite from "./barosawebsite.png"
-import minecraft from "./minecraft.jpg"
-import simpleutilz from "./simpleutilz.jpg"
+import c from "./tech/c.png";
+import cplusplus from "./tech/cplusplus.png";
+import csharp from "./tech/csharp.png";
+import ruby from "./tech/ruby.png";
+import BarosaBot from "./BarosaBot.jpg";
+import barosawebsite from "./barosawebsite.png";
+import minecraft from "./minecraft.jpg";
+import simpleutilz from "./simpleutilz.jpg";
+import simplz from "./simplz.jpg";
 
 export {
   logo,
@@ -46,6 +47,7 @@ export {
   csharp,
   ruby,
   pr,
+  simplz,
   java,
   github,
   menu,

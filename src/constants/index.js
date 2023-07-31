@@ -28,6 +28,7 @@ import {
     BarosaBot,
     minecraft,
     simpleutilz,
+    simplz,
   } from "../assets";
   
   export const navLinks = [
@@ -291,6 +292,35 @@ import {
       image: minecraft,
       source_code_link: "https://github.com/ItzSimplyJoe/Minecraft-Plugin",
     },
+    {
+      name: "Social Media Website",
+      description:
+      "A Desktop based social media website called Simplz, with posts, comments, likes, following and private messaging.",
+      tags: [
+        {
+          name: "Flask",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: simplz,
+      source_code_link: "https://github.com/ItzSimplyJoe/Social-Media-App",
+    }
   ];
 
   export { services, techimgoodwith, techimlearning, techiveused, experiences, projects };

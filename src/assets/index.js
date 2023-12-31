@@ -35,6 +35,7 @@ import barosawebsite from "./barosawebsite.png";
 import minecraft from "./minecraft.jpg";
 import simpleutilz from "./simpleutilz.jpg";
 import simplz from "./simplz.jpg";
+import salus from "./company/salus.jpg";
 
 export {
   logo,
@@ -48,6 +49,7 @@ export {
   ruby,
   pr,
   simplz,
+  salus,
   java,
   github,
   menu,

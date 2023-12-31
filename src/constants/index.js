@@ -10,6 +10,7 @@ import {
     flask,
     elf,
     sqlite,
+    salus,
     raytheon,
     school,
     virtualassistant,
@@ -81,7 +82,15 @@ import {
     {
       name: "Adobe After Effects",
       icon: ae,
-    }
+    },
+    {
+      name: "Flask",
+      icon: flask,
+    },
+    {
+      name: "Sqlite",
+      icon: sqlite,
+    },
   ];
   const techiveused = [
     {
@@ -95,14 +104,6 @@ import {
     {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: "Flask",
-      icon: flask,
-    },
-    {
-      name: "Sqlite",
-      icon: sqlite,
     },
     {
       name: "Three JS",
@@ -119,6 +120,10 @@ import {
     {
       name: "Java",
       icon: java,
+    },
+    {
+      name: 'C#',
+      icon: csharp,
     },
   ];
 
@@ -138,10 +143,6 @@ import {
     {
       name: 'C++',
       icon: cplusplus,
-    },
-    {
-      name: 'C#',
-      icon: csharp,
     },
   ];
   
@@ -199,6 +200,18 @@ import {
         "Learning linux and how to use it by using a program called Bandit",
         "Created a plesk server from scratch and configured it to work correctly",
         "Learned how to work as a part of a team",
+      ],
+    },
+    {
+      title:"Degree Apprenticeship at Salus",
+      company_name: "Salus",
+      icon: salus,
+      iconBg: "#fff",
+      date: "September 2023 - Present",
+      points: [
+        "I am currently undertaking a degree level apprenticeship at Salus, where I will be working as a software developer.",
+        "I am attending University one day per week in order to complete my degree",
+        "I am also gaining real in the field experience by working at Salus 4 days per week.",
       ],
     },
 

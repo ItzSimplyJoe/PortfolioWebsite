@@ -39,7 +39,8 @@ const About = () => {
     
     <motion.p variants={fadeIn("", "", 0.1,1)}
     className= "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-    Hello, my name is Joe Bostock, I am soon to be a junior software engineer. 
+    Hello, my name is Joe Bostock, I am a junior software engineer.
+    I am currently undertaking a degree apprenticeship in software development. 
     I love programming and making projects
     and i have created this portfolio of some of my work.
     </motion.p>

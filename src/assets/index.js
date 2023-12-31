@@ -36,6 +36,7 @@ import minecraft from "./minecraft.jpg";
 import simpleutilz from "./simpleutilz.jpg";
 import simplz from "./simplz.jpg";
 import salus from "./company/salus.jpg";
+import blazor from "./tech/blazor.png";
 
 export {
   logo,
@@ -62,6 +63,7 @@ export {
   css,
   vlang,
   git,
+  blazor,
   html,
   javascript,
   reactjs,

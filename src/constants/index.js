@@ -29,6 +29,7 @@ import {
     BarosaBot,
     minecraft,
     simpleutilz,
+    blazor,
     simplz,
   } from "../assets";
   
@@ -91,6 +92,22 @@ import {
       name: "Sqlite",
       icon: sqlite,
     },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "git",
+      icon: git,
+    }, 
+    {
+      name: 'C#',
+      icon: csharp,
+    },
+    {
+      name: 'Blazor',
+      icon: blazor,
+    },
   ];
   const techiveused = [
     {
@@ -101,18 +118,12 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+
     {
       name: "Three JS",
       icon: threejs,
     },
-    {
-      name: "git",
-      icon: git,
-    },  
+ 
     {
       name: 'JQuery',
       icon: jquery,
@@ -120,10 +131,6 @@ import {
     {
       name: "Java",
       icon: java,
-    },
-    {
-      name: 'C#',
-      icon: csharp,
     },
   ];
 
